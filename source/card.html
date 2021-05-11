@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Магазин швейцарских часов</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-header__nav">
+                <div class="navigation-column">
+                    <a class="main-header__logo">
+                        <img src="img/logo.svg" width="104" height="26" alt="Логотип">
+                    </a>
+                    <ul class="main-header__navigation navigation-list">
+                        <li class="navigation-list__item">
+                            <a href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a href="#">Акции</a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="navigation-list__item"></li>
+                        <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="main-header__user user-list">
+                    <li class="user-list__item">
+                        <a href="#">Поиск</a>
+                    </li>
+                    <li class="user-list__item">
+                        <a href="#">Избранное</a>
+                    </li>
+                    <li class="user-list__item">
+                        <a href="#">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="visually-hidden">Card "Kulte"</h1>
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-item__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-item__link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-item__link" href="#">Мужские часы</a>
+                </li>
+                <li class="breadcrumbs-current breadcrumbs-item">
+                    <a class="breadcrumbs-item__link" href="#">Georg Jensen</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="container">
+                <div class="card-wrapper">
+                    <div class="card-photos__column">
+                        <p class="card-photo__full">
+                            <img src="img/watch_card_1.jpg" width="423" height="520" alt="Фото">
+                        </p>
+                        <ul class="card-photo__preview photo-preview">
+                            <li class="photo-preview__item">
+                                <img src="img/watches_2.jpg" width="127" height="121" alt="Фото 1">
+                            </li>
+                            <li class="photo-preview__item">
+                                <img src="img/watches_3.jpg" width="127" height="121" alt="Фото 2">
+                            </li>
+                            <li class="photo-preview__item">
+                                <img src="img/watches_4.jpg" width="127" height="121" alt="Фото 3">
+                            </li>
+                            <li class="photo-preview__item">
+                                <img src="img/watches_5.jpg" width="127" height="121" alt="Фото 4">
+                            </li>
+                        </ul>
+                        <button class="card-photo-prev-button" type="button">
+                            <span>Previous</span>
+                        </button>
+                        <button class="card-photo-next-button" type="button">
+                            <span>Next</span>
+                        </button>
+                    </div>
+                    <div class="card-direction__column">
+                        <div class="card-direction__header">
+                            <h2 class="card-direction__title">Kulte, 26mm</h2>
+                            <button class="card-direction__button favorite" type="button">
+                                <span>Избранное</span>
+                            </button>
+                        </div>
+                        <p class="card-direction__price">12 700 Р</p>
+                        <ul class="bookmark-list">
+                            <li class="bookmark-item">
+                                <a class="bookmark-item__link" href="#">Описание</a>
+                            </li>
+                            <li class="bookmark-item">
+                                <a class="bookmark-item__link" href="#">Технические характеристики</a>
+                            </li>
+                        </ul>
+                        <p class="card-description__text">Наручные часы <span>KULTE</span>, разработанные датским
+                            дизайнером
+                            Хэннингом Коппелем,
+                            были выпущены в 1982 году. Они были встречены аплодисментами, а дизайн считался
+                            революционным.
+                        </p>
+                        <p class="card-description__text">
+                            Общая эстетика минималистична, а острые, плавные линии корпуса стали легендарными. Механизм
+                            Swiss
+                            Made
+                            обеспечивает высокий уровень технических характеристик.
+                        </p>
+                        <p class="card-description__text">Наручные часы <span>KULTE</span> — это образец датского
+                            дизайнерского
+                            наследия, история
+                            баланса и точности как внутри, так и снаружи.
+                        </p>
+                        <a class="dark-button" href="#">В корзину</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="similar">
+            <div class="container">
+                <h2 class="similar-title">Вы смотрели</h2>
+                <ul class="similar-catalog__list similar-list">
+                    <li class="similar-list__item">
+                        <a class="similar-item__link" href="#">
+                            <h3 class="similar-item__title">Techne</h3>
+                            <p class="similar-item__price">15 700 ₽</p>
+                            <img src="img/watch1.png" width="360" height="374" alt="Techne">
+                        </a>
+                    </li>
+                    <li class="similar-list__item">
+                        <a class="similar-item__link" href="#">
+                            <h3 class="similar-item__title">Techne</h3>
+                            <p class="similar-item__price">15 700 ₽</p>
+                            <img src="img/watch2.png" width="360" height="374" alt="Techne">
+                        </a>
+                    </li>
+                    <li class="similar-list__item">
+                        <a class="similar-item__link" href="#">
+                            <h3 class="similar-item__title">Techne</h3>
+                            <p class="similar-item__price">22 700 ₽</p>
+                            <img src="img/watch3.png" width="360" height="374" alt="Techne">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="main-footer__wrapper">
+                <div class="main-footer__column">
+                    <a class="main-footer__logo">
+                        <img src="img/logo.svg" width="104" height="26" alt="Логотип">
+                    </a>
+                    <a class="main-footer__phone" href="tel:84994504797">8 (499) 450-47-97</a>
+                    <a class="main-footer__mail" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
+                </div>
+                <dl class="links">
+                    <div>
+                        <dt>О компании</dt>
+                        <dd>
+                            <ul class="links-list">
+                                <li>
+                                    <a class="links-list__link">Наши магазины</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Вакансии</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Сертификаты</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Отзывы</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>Покупателям</dt>
+                        <dd>
+                            <ul class="links-list">
+                                <li>
+                                    <a class="links-list__link" href="catalog.html">Каталог товаров</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Как заказать</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">FAQ</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Корпоративным клиентам</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>Оплата и доставка</dt>
+                        <dd>
+                            <ul class="links-list">
+                                <li>
+                                    <a class="links-list__link">Способы оплаты</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Время доставки</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Гарантии и ремонт</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Возврат и компенсация</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
