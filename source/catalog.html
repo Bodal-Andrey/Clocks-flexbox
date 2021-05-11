@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Магазин швейцарских часов</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-header__nav">
+                <div class="navigation-column">
+                    <a class="main-header__logo">
+                        <img src="img/logo.svg" width="104" height="26" alt="Логотип">
+                    </a>
+                    <ul class="main-header__navigation navigation-list">
+                        <li class="navigation-list__item">
+                            <a href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a href="#">Акции</a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="navigation-list__item"></li>
+                        <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="main-header__user user-list">
+                    <li class="user-list__item">
+                        <a href="#">Поиск</a>
+                    </li>
+                    <li class="user-list__item">
+                        <a href="#">Избранное</a>
+                    </li>
+                    <li class="user-list__item">
+                        <a href="#">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-item__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-item__link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="breadcrumbs-current breadcrumbs-item">
+                    <a class="breadcrumbs-item__link" href="#">Мужские часы</a>
+                </li>
+            </ul>
+            <section class="catalog">
+                <header class="catalog-header">
+                    <h1 class="catalog-header__title">Мужские часы</h1>
+                    <p>Сортировать по: <a href="#">популярности</a></p>
+                </header>
+                <div class="catalog-content__wrapper">
+                    <div class="filters-column">
+                        <form>
+                            <fieldset class="filter filter-expand">
+                                <legend class="filter-title">Стоимость</legend>
+                                <div class="filter-container">
+                                    <label class="visually-hidden" for="min-price">Стоимость от</label>
+                                    <input type="text" name="min-price" id="min-price" value="12 000 ₽">
+                                    <label class="visually-hidden" for="maz-price">Стоимость до</label>
+                                    <input type="text" name="max-price" id="maz-price" value="90 000 ₽">
+                                </div>
+                            </fieldset>
+                            <fieldset class="filter filter-expand">
+                                <legend class="filter-title">Бренд</legend>
+                                <div class="filter-container">
+                                    <label>
+                                        <input type="checkbox" name="brand" id="techne" value="Techne" checked>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="brand" id="rado" value="Rado" checked>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="brand" id="bvlgari" value="Bvlgari" checked>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="brand" id="tissot" value="Tissot">
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="brand" id="omega" value="Omega">
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="brand" id="montblanc" value="Montblanc">
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="filter filter-collapsed">
+                                <legend class="filter-title">Материал</legend>
+                                <div class="filter-container"></div>
+                            </fieldset>
+                            <fieldset class="filter filter-collapsed">
+                                <legend class="filter-title">Материал</legend>
+                                <div class="filter-container"></div>
+                            </fieldset>
+                            <fieldset class="filter filter-collapsed">
+                                <legend class="filter-title">Цвет</legend>
+                                <div class="filter-container"></div>
+                            </fieldset>
+                            <button class="form-button" type="reset">Сбросить фильтр</button>
+                        </form>
+                    </div>
+                    <div class="catalog-column">
+                        <ul class="catalog-list__compact catalog-list">
+                            <li class="catalog-list__item catalog-item__compact">
+                                <a class="catalog-item__link" href="#">
+                                    <h3 class="catalog-item__title">Techne</h3>
+                                    <p class="catalog-item__price">12 700 ₽</p>
+                                    <img class="catalog-item__img" src="img/watch_1.png" width="252" height="300"
+                                        alt="Techne">
+                                </a>
+                            </li>
+                            <li class="catalog-list__item catalog-item__compact">
+                                <a class="catalog-item__link" href="#">
+                                    <h3 class="catalog-item__title">Techne</h3>
+                                    <p class="catalog-item__price">12 700 ₽</p>
+                                    <img class="catalog-item__img" src="img/watch_2.png" width="252" height="300"
+                                        alt="Techne">
+                                </a>
+                            </li>
+                            <li class="catalog-list__item catalog-item__compact">
+                                <a class="catalog-item__link" href="#">
+                                    <h3 class="catalog-item__title">Techne</h3>
+                                    <p class="catalog-item__price">15 700 ₽</p>
+                                    <img class="catalog-item__img" src="img/watch_3.png" width="252" height="300"
+                                        alt="Techne">
+                                </a>
+                            </li>
+                            <li class="catalog-list__item catalog-item__compact">
+                                <a class="catalog-item__link" href="#">
+                                    <h3 class="catalog-item__title">Techne</h3>
+                                    <p class="catalog-item__price">12 700 ₽</p>
+                                    <img class="catalog-item__img" src="img/watch_4.png" width="252" height="300"
+                                        alt="Techne">
+                                </a>
+                            </li>
+                            <li class="catalog-list__item catalog-item__compact">
+                                <a class="catalog-item__link" href="#">
+                                    <h3 class="catalog-item__title">Techne</h3>
+                                    <p class="catalog-item__price">12 700 ₽</p>
+                                    <img class="catalog-item__img" src="img/watch_5.png" width="252" height="300"
+                                        alt="Techne">
+                                </a>
+                            </li>
+                            <li class="catalog-list__item catalog-item__compact item__promo">
+                                <p class="item-promo__text">
+                                    <span class="item-promo__percent">*20%</span>
+                                    на вторую позицию в чеке
+                                </p>
+                                <img class="catalog-item__img" src="img/banner_catalog.png" width="250" height="300"
+                                    alt="promo">
+                            </li>
+                            <li class="catalog-list__item catalog-item__compact">
+                                <a class="catalog-item__link" href="#">
+                                    <h3 class="catalog-item__title">Bvlgari</h3>
+                                    <p class="catalog-item__price">72 700 ₽</p>
+                                    <img class="catalog-item__img" src="img/watch_9.png" width="252" height="300"
+                                        alt="Techne">
+                                </a>
+                            </li>
+                            <li class="catalog-list__item catalog-item__compact">
+                                <a class="catalog-item__link" href="#">
+                                    <h3 class="catalog-item__title">Techne</h3>
+                                    <p class="catalog-item__price">22 700 ₽</p>
+                                    <img class="catalog-item__img" src="img/watch_10.png" width="252" height="300"
+                                        alt="Techne">
+                                </a>
+                            </li>
+                            <li class="catalog-list__item catalog-item__compact">
+                                <a class="catalog-item__link" href="#">
+                                    <h3 class="catalog-item__title">Rado</h3>
+                                    <p class="catalog-item__price">22 000 ₽</p>
+                                    <img class="catalog-item__img" src="img/watch_11.png" width="252" height="300"
+                                        alt="Techne">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="accessories">
+                <header class="accessories-header">
+                    <h2 class="accessories-title">Ремешки</h2>
+                    <a class="show-more" href="#">Смотреть все</a>
+                </header>
+                <ul class="accessories-list">
+                    <li class="accessories-list__item list-item">
+                        <a class="list-item__link" href="#">
+                            <h3 class="list-item__title">Georg Jensen</h3>
+                            <p class="list-item__price">6 500 ₽</p>
+                            <img class="list-item__img" src="img/band_1.png" width="360" height="374"
+                                alt="Georg Jensen">
+                        </a>
+                    </li>
+                    <li class="accessories-list__item list-item">
+                        <a class="list-item__link" href="#">
+                            <h3 class="list-item__title">Nato</h3>
+                            <p class="list-item__price">3 200 ₽</p>
+                            <img class="list-item__img" src="img/band_2.png" width="360" height="374" alt="Nato">
+                        </a>
+                    </li>
+                    <li class="accessories-list__item list-item">
+                        <a class="list-item__link" href="#">
+                            <h3 class="list-item__title">Spark</h3>
+                            <p class="list-item__price">5 400 ₽</p>
+                            <img class="list-item__img" src="img/band_3.png" width="360" height="374" alt="Spark">
+                        </a>
+                    </li>
+                </ul>
+                <button class="accessories-prev__button" type="button">
+                    <span>Previous</span>
+                </button>
+                <button class="accessories-next__button" type="button">
+                    <span>Next</span>
+                </button>
+            </section>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="main-footer__wrapper">
+                <div class="main-footer__column">
+                    <a class="main-footer__logo">
+                        <img src="img/logo.svg" width="104" height="26" alt="Логотип">
+                    </a>
+                    <a class="main-footer__phone" href="tel:84994504797">8 (499) 450-47-97</a>
+                    <a class="main-footer__mail" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
+                </div>
+                <dl class="links">
+                    <div>
+                        <dt>О компании</dt>
+                        <dd>
+                            <ul class="links-list">
+                                <li>
+                                    <a class="links-list__link">Наши магазины</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Вакансии</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Сертификаты</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Отзывы</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>Покупателям</dt>
+                        <dd>
+                            <ul class="links-list">
+                                <li>
+                                    <a class="links-list__link" href="catalog.html">Каталог товаров</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Как заказать</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">FAQ</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Корпоративным клиентам</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>Оплата и доставка</dt>
+                        <dd>
+                            <ul class="links-list">
+                                <li>
+                                    <a class="links-list__link">Способы оплаты</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Время доставки</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Гарантии и ремонт</a>
+                                </li>
+                                <li>
+                                    <a class="links-list__link">Возврат и компенсация</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
