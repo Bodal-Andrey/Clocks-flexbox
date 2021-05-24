@@ -1,1 +1,40 @@
-//Тут будет scss для header
+.main-header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-column {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.main-header__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 450px;
+
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: $main-font-weight;
+    font-size: 14px;
+    line-height: 16px;
+    color: #555248;
+}
+
+.main-header__navigation a {
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: $main-font-weight;
+    font-size: 14px;
+    line-height: 16px;
+    color: #555248;
+    text-decoration: none;
+}
+
+.main-header__user {
+    display: flex;
+    list-style: none;
+    width: 150px;
+}

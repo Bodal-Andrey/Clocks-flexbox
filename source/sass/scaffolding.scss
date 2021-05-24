@@ -1,26 +1,25 @@
 body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-
+  @include reset;
   font-family: $main-fonts;
   font-size: $main-font-size;
   font-weight: $main-font-weight;
   color: $main-color-text;
-
-  background-color: #ffffff;
-
+  line-height: 24px;
 }
 
 a {
+  display: block;
   text-decoration: none;
-  color: $main-color-text;
 }
 
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  @include reset-list;
 }
 
 .visually-hidden {
@@ -46,22 +45,25 @@ html {
   box-sizing: inherit;
 }
 
-//Описываем контейнер
+html,
+body {
+    min-width: 1366px;
+}
 
 .container {
-  max-width: $mobile-width;
+  width: 1170px;
   margin: 0 auto;
 }
 
-
-@media (min-width: $tablet-width) {
-  .container {
-    width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    width: $desktop-width;
-  }
+.button {
+  width: 205px;
+  height: 64px;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
 }

@@ -1,0 +1,19 @@
+.popular-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-list {
+    display: flex;
+    flex-wrap: wrap;
+    @include reset;
+    margin-right: -25px;
+    list-style: none;
+}
+
+.popular-list__item {
+    width: 370px;
+    height: 467px;
+    margin-right: 25px;
+}
