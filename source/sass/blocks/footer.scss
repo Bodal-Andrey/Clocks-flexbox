@@ -1,1 +1,23 @@
-//Тут будет scss Для footer
+.main-footer__wrapper {
+    display: flex;
+}
+
+.main-footer__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    @include reset;
+}
+
+.links div {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+
+.links-list {
+    @include reset-list;
+}

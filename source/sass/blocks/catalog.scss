@@ -1,0 +1,44 @@
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-header p {
+    display: flex;
+}
+
+.filter {
+    border: none;
+    @include reset;
+}
+
+.catalog-content__wrapper {
+    display: flex;
+}
+
+.filters-column {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin-right: 50px;
+}
+
+.catalog-column {
+    width: 880px;
+}
+
+.catalog-list__compact {
+    display: flex;
+    flex-wrap: wrap;
+    @include reset;
+    margin-right: -40px;
+}
+
+.catalog-item__compact {
+    width: 252px;
+    margin-right: 40px;
+}
+
+.item-promo {
+    background-color: #D4B098;
+}
